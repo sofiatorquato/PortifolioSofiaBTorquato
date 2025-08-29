@@ -1,0 +1,121 @@
+
+/* 1. Reset e Estilos Globais */
+:root {
+    --cor-fundo: #f0f2f5;
+    --cor-branco: #ffffff;
+    --cor-texto-primario: #007e8f;
+    --cor-texto-secundario: #549090;
+    --cor-borda: #034149;
+    --cor-acento: #034149;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(#008e9b, #7afdf9, #cdfffb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: rgb(243, 248, 252);
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgb(0, 0, 0.1);
+    width: 320px;
+    transform: 0.3;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card:hover{
+    transform: translateY(-10px); /* Move o card 10px para cima */
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+
+}
+
+.card-container-image{
+    width: 100%;
+    height: 200px; /* Altura fixa para o container da imagem */
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+       /* Faz a parte de baixo desaparecer suavemente no fundo */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%; 
+}
+
+.card-info{
+    font-family: 'Playfair Display', serif;
+    padding: 24px;
+}
+
+.card-name{
+    font-size: 24px;
+    color: var(--cor-texto-primario);
+    margin-bottom: 8px;
+    text-shadow: 0 0 8px rgba(0, 166, 188, 0.5);
+    transition: 0.3s;
+}
+
+.card-title{
+    font-size: 16px;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 24px;
+}
+
+.card-social{
+    display: flex;
+    justify-content: center;
+    gap: 16px; /* Espaço entre os ícones */
+
+}
+
+.card-social a{ /*Estilização dos links*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: var(--cor-acento);
+    border: 2px solid var(--cor-borda);
+    border-radius: 50%; /* Deixa o link redondo */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.card-social a:hover{
+    background-color: var(--cor-acento);
+    color: var(--cor-branco);
+    border-color: var(--cor-acento);
+    
+}
+
+/* 7. Design Responsivo (Nossa primeira Media Query!) */
+@media (max-width: 400px) {
+    .card {
+        width: 90%; /* O card ocupará 90% da largura da tela */
+    }
+}
+

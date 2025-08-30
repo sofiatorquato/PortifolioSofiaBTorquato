@@ -40,6 +40,7 @@ Responsividade com media queries (@media).
 
 Tipografia personalizada com Google Fonts.
 
+
 💻 Como Executar
 
 Faça o download ou clone este repositório.

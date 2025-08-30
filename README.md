@@ -44,10 +44,10 @@ Tipografia personalizada com Google Fonts.
 
 Faça o download ou clone este repositório.
 
-git clone https://github.com/seu-usuario/portfolio.git
+git clone [https://github.com/seu-usuario/portfolio.git](https://github.com/sofiatorquato/PortifolioSofiaBTorquato.git)
 
 
-Coloque sua foto em /img/foto.jpeg.
+Coloque sua foto em img/(suafoto.jpg).
 
 Abra o arquivo index.html diretamente em seu navegador.
 

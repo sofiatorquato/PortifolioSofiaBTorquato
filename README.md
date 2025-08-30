@@ -44,7 +44,7 @@ Tipografia personalizada com Google Fonts.
 
 Faça o download ou clone este repositório.
 
-git clone [https://github.com/seu-usuario/portfolio.git](https://github.com/sofiatorquato/PortifolioSofiaBTorquato.git)
+git clone https://github.com/sofiatorquato/PortifolioSofiaBTorquato.git
 
 
 Coloque sua foto em img/(suafoto.jpg).
